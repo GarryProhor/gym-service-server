@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { SequelizeConfigService } from './config/sequelizeConfig.service';
 import { databaseConfig } from './config/configuration';
 import { GymPartsModule } from './gym-parts/gym-parts.module';
+import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { GymPartsModule } from './gym-parts/gym-parts.module';
     UsersModule,
     AuthModule,
     GymPartsModule,
+    ShoppingCartModule,
   ],
 })
 export class AppModule {}
